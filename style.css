@@ -83,19 +83,58 @@ header{
 
 .home img{
     height: 550px;
+    transition: 0.3s ease-in-out;         
+}
+
+.home-img{
+    height: 550px;
+    width: 550px;
     position: absolute;
     transition: 0.3s ease-in-out;
     border-radius: 50%;
     background-color: white;
     box-shadow: 0px 0px 10px white;
-    transition: 0.3s ease-in-out;               
+    transition: 0.3s ease-in-out;
+    height: 550;
 }
 
-.home img:hover{
+.home-img:hover img{
+    scale: 1.5;
+    transition: 0.3s ease-in-out;
+}
+
+.home h1{
+    color: black;
+    position: absolute;
+    transform: translate(-450px , 190px);
+    font-size: 50px;
+    text-transform: uppercase;
+    cursor: default;
+}
+
+.home h1:nth-child(3){
+    text-transform: uppercase;
+    transform: translate(-450px , 240px);
+    transition: 0.3s ease-in-out;
+    cursor: default;
+}
+.home h1:nth-child(3):hover{
+    color: gold;
+    transition: 0.3s ease-in-out;
+}
+
+
+.home h1:nth-child(4){
+    text-transform: uppercase;
+    transform: translate(-450px , 290px);
+    color: rgb(16, 118, 235);
+}
+
+.home-img:hover{
     scale: 1.15;
     transition: 0.3s ease-in-out;
     background-color: orange;
-    box-shadow: 0px 0px 10px orange;
+    box-shadow: 0px 0px 15px orange;
     transition: 0.3s ease-in-out;
     
 }
@@ -407,4 +446,25 @@ ul.breadcrumb {
 .last-cont :nth-child(5),
 .last-cont :nth-child(7){
     color: rgb(100, 100, 100);
+}
+
+.social_cont img{
+    height: 5vh;
+    border-radius: 2px;
+}
+
+.Glow{
+    animation: glow 3s ease-in-out  infinite forwards;
+}
+
+@keyframes glow{
+    0%{
+        color: black;
+    }
+    50%{
+        color: gold;
+    }
+    100%{
+        color:black;
+    }
 }
